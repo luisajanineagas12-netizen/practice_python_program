@@ -1,7 +1,2 @@
-num = 0
-
-while True:
-    num = num + 2
-    if num > 100:
-        break
+for num in range(0, 101, 2):
     print(num)
