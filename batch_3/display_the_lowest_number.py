@@ -6,4 +6,6 @@ while True:
         print("Invalid Input")
         break
     inputted.append(int(numbers))
-    print(min(inputted))
+
+if inputted:
+    print("The lowest number is: ", min(inputted))
