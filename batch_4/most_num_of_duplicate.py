@@ -2,10 +2,11 @@ inputted = []
 
 while True:
     numbers = input("Please enter a number: ")
-    if numbers.isdigit():
+    if not numbers.isdigit():
         print("Invalid Input")
         break
-
     inputted.append(int(numbers))
+
+if inputted:
     highest_duplicate = max(set(inputted), key=inputted.count)
-    print(highest_duplicate)
+    print("The number with highest duplicate: ", highest_duplicate)

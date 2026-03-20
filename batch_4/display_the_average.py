@@ -5,7 +5,8 @@ while True:
     if not numbers.isdigit():
         print("Invalid Input")
         break
-
     inputted.append(int(numbers))
+
+if inputted:
     average = sum(inputted) / len(inputted)
     print("The average is: ", average)
